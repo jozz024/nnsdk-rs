@@ -69,15 +69,6 @@ extern "C" {
 
     #[link_name = "\u{1}_ZN2nn5prepo10PlayReportC1Ev"]
     pub fn PlayReport_PlayReport(this: *mut PlayReport);
-
-    #[link_name = "_ZN2nn5prepo10PlayReportC1EPKc"]
-    pub fn PlayReport_PlayReportWithEventID(this: *mut PlayReport, event_id: *const u8);
-
-    #[link_name = "\u{1}_ZNK2nn5prepo10PlayReport8GetCountEv"]
-    pub fn PlayReport_GetCount(this: *mut PlayReport) -> u64;
-
-    #[link_name = "_ZN2nn5prepo28RequestImmediateTransmissionEv"]
-    pub fn RequestImmediateTransmission() -> root::Result;
 }
 impl PlayReport {
     #[inline]
